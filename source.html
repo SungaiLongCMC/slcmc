@@ -12,10 +12,13 @@
   <header>
     <div id="header-inner">
       <a href="index.html" id="logo"></a>
-      <h2><a href="index.html">双溪龙基督教卫理公会
-        SLCMC</a></h2>
-      <nav>
-        <a href="#" id="menu-icon"></a>
+      <h2><a href="index.html">双溪龙基督教卫理公会SLCMC</a></h2>
+      <div id="navicon">
+      <a href="javascript:void(0);" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+      <nav id="navLinks">
         <ul>
           <li><a href="index.html" class="current">Home</a></li>
           <li><a href="source.html">Source</a></li>
@@ -26,6 +29,16 @@
       </nav>
     </div>
   </header>
+  <script>
+  function navFunction() {
+    var x = document.getElementById("navLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
   <!-- End Header -->
   <section class="order">
     <script>
