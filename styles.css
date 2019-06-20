@@ -56,6 +56,10 @@ header {
   max-width: 1200px;
   margin: 0 auto;
 }
+#navicon {
+ display: none;
+}
+
 #logo {
   margin: 20px 0 20px 20px;
   float: left;
@@ -65,8 +69,11 @@ header {
   background-size: 60px,60px;
   border-radius: 50%;
 }
+header h2 {
+  padding: 0;
+}
 header h2 a {
-  padding: 1% 0 0 0;
+  padding: 25px 0 0 0;
   float: left;
   width: 250px;
   height: 60px;
@@ -80,17 +87,7 @@ header h2 a:hover {
 /* Start Navigation */
 nav {
   float: right;
-  padding: 20px 20px 0 0;
-}
-#menu-icon {
-  display: hidden;
-  width: 40px;
-  height: 40px;
-  background: url(img/nav.png) center;
-  background-size: 60px,60px;
-}
-a:hover #menu-icon {
-  border-radius: 4px 4px 0 0;
+  padding: 40px 20px 0 0;
 }
 ul {
   list-style-type: none;
@@ -265,35 +262,44 @@ footer.copyright p {
     width: 100%;
   }
   header h2 a {
-    padding: 8% 0 0 10px;
+    padding: 35px 0 0 10px;
     font-size: 60%;
     width: 150px;
     height: 60px;
     display: inline;
   }
-  #menu-icon {
-    display: inline-block;
-  }
-  nav ul li, nav:active ul {
+  #navLinks {
+    margin: 70px 0 0 0;
+    padding: 0;
     display: none;
-    z-index: 1000;
-    position: absolute;
-    padding: 20px;
-    background: #6991AC;
-    right: 20px;
-    top: 60px;
-    border: 3px solid #FFF;
-    border-radius: 10px 0 10px 10px;
-    width: 5%;
+    float: right;
   }
-  nav:hover ul {
+  #navLinks a {
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 17px;
     display: block;
   }
-  nav li {
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
+  #navicon{
+    display: block;
   }
+   #navicon i {
+     font-size: 200%;
+     float: right;
+     margin: 1%;
+     padding: 30px 5% 0 0;
+     color: #C3D7DF;
+  }
+  #navicon a:hover{
+color: #C3D7DF;
+ }
+ nav ul li {
+   font-size: 120%;
+   display: block;
+   float: left;
+   padding: 0;
+ }
   .banner {
     padding-top: 86px;
   }
